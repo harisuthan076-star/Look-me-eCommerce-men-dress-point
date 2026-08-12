@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" type="x-icon" href="assets/icons/logo.jpg">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/loginnew.css">
+    
+</head>
+
+<body>
+    <div class="wrapper">
+        <nav class="nav">
+            <div class="nav-logo">
+                <img src="assets/icons/logo.svg" alt="">
+            </div>
+
+            <div class="nav-menu" id="navMenu">
+                <ul>
+                    <li><a href="index.html" class="link active">Home</a></li>
+                    <li><a href="shop.html" class="link">Shop</a></li>
+                    <li><a href="account.html" class="link">My Account</a></li>
+                    <li><a href="about.html" class="link">About us</a></li>
+                    <li><a href="loginnew.html" class="link">Login</a></li>
+                </ul>
+            </div>
+
+            <div class="nav-btn">
+                <button class="btn SignIn" id="loginBtn" onclick="login()">Sign In</button>
+                <button class="btn SignIn" id="registerBtn" onclick="register()">Sign Up</button>
+            </div>
+
+            <div class="nav-menu-btn">
+                <img src="assets/icons/menu.png" alt="" onclick="myMenuFunction()">
+            </div>
+        </nav>
+
+        <!---------------------LOGIN---------------------->
+        
+        <div class="form-box">
+            <!---------------------LOGIN IN FORM---------------------->
+            <div class="login-container" id="login">
+                <div class="top">
+                    <span>Don't have an account? <a href="" onclick="register()" >Sign Up</a></span>
+                    <header>Login</header>
+                </div>
+                <div class="input">
+                    <input type="text" class="input-field" placeholder="Email" id="e_mail">
+                    <img src="assets/icons/marker.png" alt="">
+                </div>
+                <div class="input">
+                    <input type="password" class="input-field" placeholder="password" id="pass_word">
+                    <img src="assets/icons/fingerprint.png" alt="">
+                </div>
+                <div class="input">
+                    <input type="submit" class="submit" value="Sign in" onclick="submit()">
+                </div>
+                <div class="two-col">
+                    <div class="one">
+                        <input type="checkbox" name="" id="login-check">
+                        <label for="login-check"> Remember Me</label>
+                    </div>
+                    <div class="two">
+                        <label><a href="">|Forgot password?</a></label>
+                    </div>
+                </div>
+                
+                <div class="alert">
+                    <p id="alert"></p>
+                </div>
+            </div>
+
+
+
+            <!---------------------SIGN IN FORM---------------------->
+        
+            <div class="register-container" id="register">
+                <div class="top">
+                    <span>Have an account? <a href="" onclick="login()">Login</a></span>
+                    <header>Sign Up</header>
+                </div>
+                <div class="two-forms">
+                    <div class="input">
+                        <input type="text" class="input-field" placeholder="First Name" id="F-name">
+                        <img src="assets/icons/circle-user.png" alt="">
+                    </div>
+                    <div class="input">
+                        <input type="text" class="input-field" placeholder="Last Name" id="L-name">
+                        <img src="assets/icons/circle-user.png" alt="">
+                    </div>
+                </div>
+                <div class="input">
+                    <input type="text" class="input-field" placeholder="Email" id="E-mail">
+                    <img src="assets/icons/marker.png" alt="">
+                </div>
+                <div class="input">
+                    <input type="password" class="input-field" placeholder="password" id="pass-word">
+                    <img src="assets/icons/fingerprint.png" alt="">
+                </div>
+                <div class="input">
+                    <input type="submit" class="submit" value="Register" id="submit" onclick="sub()">
+                </div>
+                <div class="two-col">
+                    <div class="one">
+                        <input type="checkbox" name="" id="register-check">
+                        <label for="register-check"> Remember Me</label>
+                    </div>
+                    <div class="two">
+                        <label><a href="">Terms & Conditions</a></label>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+<script src="js/newloginin.js"></script>
+
+</html>

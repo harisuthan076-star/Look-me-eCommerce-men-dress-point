@@ -1,0 +1,283 @@
+*{
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: url(../assets/images/about/blurred_darkened_shop_image.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    backdrop-filter: blur(4px);
+}
+
+.nav .nav-logo img{
+    width: 100px;
+} 
+
+.nav-menu-btn img{
+    width: 20px;
+}   
+
+.wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 110vh;
+}
+
+.nav{
+    position: fixed;
+    top: 0;
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    height: 100px;
+    line-height: 100px;
+    background: linear-gradient(rgba(39,39,39,0.6),transparent);
+    z-index: 100;
+    /*background-color: rgba(0, 0, 0, 0.24);
+   backdrop-filter: blur(10px);*/
+    
+}
+
+.nav-menu ul{
+    display: flex;
+    
+}
+
+.nav-menu ul li{
+    list-style-type: none;
+}
+
+.nav-menu ul li .link{
+    text-decoration: none;
+    font-weight: 500;
+    color: white;
+    padding-bottom: 8px;
+    margin: 0 25px;
+    transition: all 0.2s;
+}
+
+.link:hover, .active{
+    border-bottom: 2px solid white;
+}
+
+.nav-btn .btn{
+    width: 130px;
+    height: 40px;
+    font-weight: 500;
+    background: rgba(255, 255, 255, 0.4);
+    border-radius: 30px;
+    cursor: pointer;
+    transition: 0.3s ease;
+    border: 2px solid rgba(245, 245, 245, 0.753);
+}
+#registerBtn{
+    margin-left: 15px;
+}
+
+.nav-btn .btn:hover{
+    background-color: rgb(139, 139, 139);
+}
+
+.nav-btn .Signin{
+    background: rgba(253, 253, 253, 0.892);
+}
+
+.nav-menu-btn{
+    display: none;
+}
+
+.input img{
+    width: 14px;
+    position: relative;
+    top: -33px;
+    left: 17px;
+}
+
+.form-box{
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 512px;
+    height: 420px;
+    overflow: hidden;
+    z-index: 2;
+}
+
+.login-container{
+    position: absolute;
+    left: 4px;
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    transition: 0.5s ease-in-out;
+}
+
+.register-container{
+    position: absolute;
+    right: -520px;
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    transition: 0.5s ease-in-out;
+}
+
+.top span{
+    color: #fff;
+    font-size: small;
+    padding: 10px 0;
+    display: flex;
+    justify-content: center;
+}
+
+.top span a{
+    font-weight: 500;
+    color: #fff;
+    margin-left: 5px;
+}
+
+header{
+    color: #fff;
+    font-size: 30px;
+    text-align: center;
+    padding: 10px 0 30px 0;
+}
+
+.two-forms{
+    display: flex;
+    gap: 10px;
+}
+
+.input-field{
+    font-size: 15px;
+    background: rgba(255, 255, 255, 0.892);
+    color: #000000;
+    height: 50px;
+    width: 100%;
+    padding: 0 10px 0 45px;
+    border: none;
+    border-radius: 30px;
+    outline: none;
+    transition: 0.2s ease;
+}
+
+.input-field:hover, .input-field:focus{
+    box-shadow: 0px 0px 8px white;
+    background: rgba(111, 93, 93, 0.733);
+    color: black;
+}
+
+::-webkit-placeholder{
+    color: #000000;
+}
+
+.submit{
+    font-size: 15px;
+    font-weight: 500;
+    color: black;
+    height: 45px;
+    width: 100%;
+    border: none;
+    border-radius: 30px;
+    outline: none;
+    background: rgba(254, 163, 163, 0.877);
+    cursor: pointer;
+    transition: 0.1s ease-in-out;
+}
+
+.submit:hover{
+    background: rgba(255, 255, 255, 0.4);
+    box-shadow: 0px 0px 12px #000;
+    border-radius: 30px;
+}
+
+.two-col{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1rem;
+    color: #fff;
+    font-weight: 500 bolder;
+}
+
+.two-col .one{
+    margin-left: 10px;
+}
+
+.two-col .two{
+    margin-right: 10px;
+}
+
+.two label a{
+    text-decoration: none;
+    color: #fff;
+}
+
+.two label a:hover{
+    text-decoration: underline;
+    color: blue;
+}
+
+@media only screen and (max-width: 786px){
+    .nav-btn{
+        display: none;
+    }
+
+    .nav-menu.responsive{
+        top: 100px;
+    }
+
+    .nav-menu{
+        position: absolute;
+        top: 100px;
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        height: 90vh;
+        background: #222222dd;
+        backdrop-filter: blur(10px);
+        transition: 0.3s;
+    }
+
+    .nav-menu ul{
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .nav-menu-btn{
+        display: block;
+    }
+
+    .nav-menu-btn img{
+        width: 20px;
+        padding: 10px;
+        background: hsla(0, 0%, 100%, 0.2);
+        border-radius: 50%;
+        cursor: pointer;
+        transition: 0.3s;
+    }
+
+    .nav-menu-btn i:hover{
+        background: rgba(255, 255, 255, 0.15);
+    }
+}
+
+.alert{
+    text-align: center;
+    margin-top: 2rem;
+    color: rgb(255, 100, 100);
+    height: 60px;
+    font-weight: 800;
+    padding: 1rem;
+    border-radius: 18px;
+    
+}
+
+
+
+
+
